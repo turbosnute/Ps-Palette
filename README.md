@@ -16,7 +16,7 @@ A PowerShell module for extracting color palettes from images using the Material
 
 ```powershell
 # Clone the repository
-git clone https://github.com/yourusername/Ps-Palette.git
+git clone https://github.com/turbosnute/Ps-Palette.git
 cd Ps-Palette
 
 # Build the module

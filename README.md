@@ -21,7 +21,7 @@ cd Ps-Palette
 .\build.ps1
 
 # Import the module
-Import-Module .\Ps-Palette.psd1
+Import-Module .\publish\Ps-Palette\
 ```
 
 ## Usage

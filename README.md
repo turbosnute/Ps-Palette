@@ -2,6 +2,8 @@
 
 A PowerShell module for extracting color palettes from images using the Material Design color palette algorithm.
 
+![example image](example.png)
+
 ## Features
 
 - Extract vibrant, muted, and dominant colors from any image

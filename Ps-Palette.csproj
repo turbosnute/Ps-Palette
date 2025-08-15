@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Ps_Palette</RootNamespace>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <PublishSingleFile>false</PublishSingleFile>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PaletteNet" Version="3.0.1" />
+    <PackageReference Include="PowerShellStandard.Library" Version="5.1.1" />
+    <PackageReference Include="SkiaSharp" Version="3.119.0" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Win32" Version="3.119.0" />
+  </ItemGroup>
+
+  <!-- Ensure native assets are copied -->
+  <Target Name="CopyNativeAssets" AfterTargets="Build">
+    <ItemGroup>
+      <NativeAssets Include="$(OutDir)runtimes\**\*" />
+    </ItemGroup>
+    <Message Text="Native assets found: @(NativeAssets)" Importance="high" />
+  </Target>
+
+</Project>

@@ -1,0 +1,54 @@
+# Build Outputs
+bin/
+obj/
+out/
+build/
+publish/
+*.dll
+*.pdb
+*.exe
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+!packages/build/
+*.nuget.props
+*.nuget.targets
+
+# MSBuild Binary and Structured Log
+*.binlog
+
+# .NET Core
+.dotnet/
+
+# PowerShell
+*.ps1xml
+
+# NuGet Packages
+*.nupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+!**/[Pp]ackages/repositories.config
+
+# Mac files
+.DS_Store
+
+# Windows files
+Thumbs.db
+
+
+# Temporary folders
+tmp/
+temp/
+
+# PowerShell Module specific
+*.psm1-e
+
+# Test images (if you don't want to commit test assets)
+test-images/
+sample-images/
+
+# Module build artifacts
+module-build/

@@ -74,7 +74,7 @@ public class SkiaBitmapHelper : IBitmapHelper, IDisposable
     private readonly PSCmdlet _cmdlet;
     private readonly int _maxWidth;
 
-    public SkiaBitmapHelper(string imagePath, int maxWidth = 200, PSCmdlet cmdlet = null)
+    public SkiaBitmapHelper(string imagePath, int maxWidth = 70, PSCmdlet cmdlet = null)
     {
         _cmdlet = cmdlet;
         _maxWidth = maxWidth;
@@ -171,8 +171,8 @@ public class GetImagePaletteCmdlet : PSCmdlet
     [Parameter(
         Mandatory = false,
         Position = 1)]
-    [ValidateRange(50, 2000)]
-    public int MaxWidth { get; set; } = 200;
+    [ValidateRange(30, 2000)]
+    public int MaxWidth { get; set; } = 70;
 
     // This is the main processing method of the cmdlet
     protected override void ProcessRecord()
